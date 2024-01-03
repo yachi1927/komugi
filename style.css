@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+/* モバイル版 */
+
+@media screen and (min-width:420px) {
+
+  /* ギャラリー選択 */
+  .gallery-link{
+    min-width: 100%;
+  }
+
+  .gallery{
+    min-width: 100%
+  }
+
+}
+
+/* 共通 */
+
+html,body {
+  overflow-x: hidden;
+  margin: 0%;
+  padding: 0%;
+}
+
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(82, 78, 102);
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+#home{
+  background-image: url(images/backgraund.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* フェード */
+.fadeIn{
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }  
+
+/* ヘッダー */
+.nav-wrap {
+  position: relative;
+}
+.scroll-nav {
+  width: 100%;
+  background: rgb(69, 165, 151);
+  /* メニューの背景色 */
+  overflow-x: auto;
+  /* 慣性スクロール */
+  -webkit-overflow-scrolling: touch;
+
+}
+.scroll-nav ul {
+  max-width: 1060px; /* メニューの最大幅 */
+  min-width: 770px; /* メニューの最小幅 */
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  list-style: none;
+  padding-right: 25px; /* 右側の固定分余白を空ける */
+}
+.scroll-nav ul li {
+  float: left;
+  width: 110px; /* メニューの個別の幅 */
+  text-align: center;
+  transition: 1.0s ;
+}
+.scroll-nav ul li:hover {
+  background: rgb(30, 86, 128); /* マウスホバー時の背景色 */
+}
+.scroll-nav ul li a {
+  display: inline-block;
+  color: rgb(226, 255, 247); /* メニューの文字色 */
+  text-decoration: none;
+}
+/* スクロールバーを非表示にする */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ホーム */
+.main-title{
+  text-align: left;
+}
+
+.main-title h1{
+  color: #fff;
+  font-family: 'BIZ UDPMincho', serif;
+  font-size: 90px;
+  margin-left: 30px;
+}
+
+/* ノベルページ */
+
+.novel-page{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.novel-link{
+  margin-left: 45px;
+}
+
+.novel-link img{
+  transition: 1.0s ;
+  width: 100%;
+  height: auto;
+}
+
+.novel-link img:hover{
+  opacity: 0.5 ;
+}
+
+/* ノベル選択 */
+
+.novel-serect{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.novel-serect h2{
+  font-weight: none;
+  font-family: 'BIZ UDPMincho', serif;
+  text-align: center;
+}
+
+.novel-serect a{
+  color: rgb(82, 78, 102);
+  font-size: 22px;
+  padding-left: 35px;
+  border-bottom: 1px solid rgb(82, 78, 102);
+}
+
+.novel-serect p{
+  padding-left: 35px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+/* 本文 */
+
+.text{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text h2{
+  text-align: center;
+  font-weight: none;
+  border-bottom: 1px solid rgb(82, 78, 102);
+  padding-bottom: 20px;
+}
+
+.text p{
+  padding: 40px;
+}
+
+/* ギャラリー選択 */
+.gallery-serect{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.gallery-link{
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+.gallery-link img{
+  transition: 1.0s;
+}
+
+.gallery-link img:hover{
+  opacity: 0.5;
+
+}
+
+/* ギャラリーリスト */
+.gallery-child-serect{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.gallery-child-serect h1{
+  font-weight: none;
+  font-family: 'BIZ UDPMincho', serif;
+  text-align: center;
+}
+
+.gallery-child-serect a{
+  color: rgb(82, 78, 102);
+  font-size: 22px;
+  padding-left: 35px;
+  border-bottom: 1px solid rgb(82, 78, 102);
+}
+
+/* ギャラリーメイン */
+.main-gallery{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.gallery-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.section-title{
+  text-align: center;
+  font-weight: none;
+  border-bottom: 1px solid rgb(82, 78, 102);
+  padding-bottom: 20px;
+}
+
+.gallery-item {
+  width: calc(95% / 2);
+}
+
+.gallery-item:not(:nth-child(-n+2)) {
+  margin-top: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: 1.0s;
+}
+
+.gallery-item img:hover{
+  opacity: 0.5;
+}
+
+/* 調整 */
+.side{
+  padding-top: 20%;
+  padding-bottom: 25%;
+}
+
+.side2{
+  padding-top: 25%;
+  padding-bottom: 30%;
+}
+
+.side3{
+  padding-top: 35%;
+  padding-bottom: 40%;
+}
+
+.side4{
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.side5{
+  padding-top: 15%;
+  padding-bottom: 20%;
+
+}
+
+.min{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+/* モーダル */
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area{
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+/*確認を促すモーダル：タイトルの色を変更したい場合*/
+#modaal-title{
+	font-size:1.2rem;
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+/*動画表示のモーダル：余白を変更したい場合*/
+.modaal-video .modaal-inner-wrapper{
+	padding:0;
+}
+
+/* ページボタン */
+.flex-button{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.btn{
+  color: rgb(82, 78, 102);
+  border: 1px solid rgb(82, 78, 102);
+  border-radius: 20%;
+  padding: 5px;
+}
+
+/* キャラクター一覧 */
+.character-serect{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.character-serect h1{
+  text-align: center;
+  border-bottom: 1px solid rgb(82, 78, 102);
+  font-family: 'BIZ UDPMincho', serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.character-serect a{
+  color: rgb(82, 78, 102);
+  border-bottom: 1px solid rgb(82, 78, 102);
+  font-size: 17px;
+  padding-left: 35px;
+}
+
+/* キャラクターページ */
+.character{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.character h1{
+  border-bottom: 1px solid rgb(82, 78, 102);
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.character  p{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.character p a{
+  color: rgb(69, 165, 151);
+}
+
+/* 辞典選択 */
+.dictionary-serect{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.dictionary-serect h1{
+  border-bottom: 1px solid rgb(82, 78, 102);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'BIZ UDPMincho', serif;
+}
+
+.dictionary-serect p{
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.dictionary-serect a{
+  color: rgb(69, 165, 151);
+  padding-left: 8px;
+}
+
+/* 辞典 */
+.dictionary{
+  background-color: rgb(255, 255, 255, 0.8);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.dictionary h1{
+  border-bottom: 1px solid rgb(82, 78, 102);
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.dictionary p{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dictionary a{
+  color: rgb(69, 165, 151);
+}
